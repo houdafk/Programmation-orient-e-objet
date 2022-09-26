@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{0FF7A15E-E831-49E1-879F-5D8711C13760}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>projetexia</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="affichagecommande.cpp" />
+    <ClCompile Include="affichagepersonnel.cpp" />
+    <ClCompile Include="affichagestock.cpp" />
+    <ClCompile Include="ajoutpersonnelle.cpp" />
+    <ClCompile Include="articlemoinsvendu.cpp" />
+    <ClCompile Include="articleplusvendu.cpp" />
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="chifferaffaire.cpp" />
+    <ClCompile Include="CLmainbdd.cpp" />
+    <ClCompile Include="CLmapclient.cpp" />
+    <ClCompile Include="CLMapPersonnel.cpp" />
+    <ClCompile Include="CLserviceclient.cpp" />
+    <ClCompile Include="CLServicePersonnel.cpp" />
+    <ClCompile Include="commandecreation.cpp" />
+    <ClCompile Include="creationclient.cpp" />
+    <ClCompile Include="creationstock.cpp" />
+    <ClCompile Include="modifclient.cpp" />
+    <ClCompile Include="modifcommande.cpp" />
+    <ClCompile Include="modificationpersonnelle.cpp" />
+    <ClCompile Include="modificationstock.cpp" />
+    <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="MyForm1.cpp" />
+    <ClCompile Include="MyForm2.cpp" />
+    <ClCompile Include="paniermoyen.cpp" />
+    <ClCompile Include="payement.cpp" />
+    <ClCompile Include="seuilrea.cpp" />
+    <ClCompile Include="supressionclient.cpp" />
+    <ClCompile Include="supressioncommande.cpp" />
+    <ClCompile Include="SupressionPersonnelle.cpp" />
+    <ClCompile Include="Supressionstock.cpp" />
+    <ClCompile Include="totalachatclient.cpp" />
+    <ClCompile Include="valeurachat.cpp" />
+    <ClCompile Include="valeurcom.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="affichagecommande.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="affichagepersonnel.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="affichagestock.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ajoutpersonnelle.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="articlemoinsvendu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="articleplusvendu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="chifferaffaire.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CLmainbdd.h" />
+    <ClInclude Include="CLmapclient.h" />
+    <ClInclude Include="CLMapPersonnel.h" />
+    <ClInclude Include="CLserviceclient.h" />
+    <ClInclude Include="CLServicePersonnel.h" />
+    <ClInclude Include="commandecreation.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="creationclient.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="creationstock.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="modifclient.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="modifcommande.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="modificationpersonnelle.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="modificationstock.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MyForm.h">
+      <FileType>CppForm</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="MyForm1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MyForm2.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="paniermoyen.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="payement.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="seuilrea.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="supressionclient.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="supressioncommande.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="SupressionPersonnelle.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Supressionstock.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="totalachatclient.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="valeurachat.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="valeurcom.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="affichagecommande.resx">
+      <DependentUpon>affichagecommande.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="affichagepersonnel.resx">
+      <DependentUpon>affichagepersonnel.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="affichagestock.resx">
+      <DependentUpon>affichagestock.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ajoutpersonnelle.resx">
+      <DependentUpon>ajoutpersonnelle.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="articlemoinsvendu.resx">
+      <DependentUpon>articlemoinsvendu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="articleplusvendu.resx">
+      <DependentUpon>articleplusvendu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="commandecreation.resx">
+      <DependentUpon>commandecreation.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="creationclient.resx">
+      <DependentUpon>creationclient.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="creationstock.resx">
+      <DependentUpon>creationstock.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modifclient.resx">
+      <DependentUpon>modifclient.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificationpersonnelle.resx">
+      <DependentUpon>modificationpersonnelle.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificationstock.resx">
+      <DependentUpon>modificationstock.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForm.resx">
+      <DependentUpon>MyForm.h</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForm1.resx">
+      <DependentUpon>MyForm1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForm2.resx">
+      <DependentUpon>MyForm2.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payement.resx">
+      <DependentUpon>payement.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supressionclient.resx">
+      <DependentUpon>supressionclient.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supressionclient.zu.resx">
+      <DependentUpon>supressionclient.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="supressioncommande.resx">
+      <DependentUpon>supressioncommande.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupressionPersonnelle.resx">
+      <DependentUpon>SupressionPersonnelle.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supressionstock.resx">
+      <DependentUpon>Supressionstock.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="totalachatclient.resx">
+      <DependentUpon>totalachatclient.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

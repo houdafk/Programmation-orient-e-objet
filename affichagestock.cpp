@@ -1,0 +1,2 @@
+#include "affichagestock.h"
+
